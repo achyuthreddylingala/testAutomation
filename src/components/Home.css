@@ -1,0 +1,42 @@
+/* src/components/Home.css */
+.home {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home-categories, .home-products {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .home-categories h2, .home-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-products {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .home-products h2 {
+    margin-top: 0;
+  }
+  
+  /* Responsive Design for Product Grid */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

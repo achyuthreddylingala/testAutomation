@@ -1,11 +1,16 @@
 // src/components/Home.js
 import React from 'react';
+import Header from './Header';
+
+import './Home.css'; // Assuming you'll add some additional styling
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to the User Home Page</h1>
-      <p>You are successfully logged in!</p>
+    <div className="home">
+      {/* Header with logo, search bar, and navigation links */}
+      <Header />
+
+
     </div>
   );
 };
