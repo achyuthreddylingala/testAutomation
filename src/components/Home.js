@@ -1,16 +1,24 @@
 // src/components/Home.js
 import React from 'react';
 import Header from './Header';
-
-import './Home.css'; // Assuming you'll add some additional styling
+import Categories from './Categories';
+import FeaturedProducts from './FeaturedProducts';
+import Bestsellers from './Bestsellers';
+import NewArrivals from './NewArrivals';  // Import New Arrivals component
+import Footer from './Footer';
+import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home">
-      {/* Header with logo, search bar, and navigation links */}
+    <div>
       <Header />
-
-
+      <div className="home-body">
+        <Categories />
+        <FeaturedProducts />
+        <Bestsellers />
+        <NewArrivals /> {/* Add New Arrivals component here */}
+      </div>
+      <Footer />
     </div>
   );
 };
